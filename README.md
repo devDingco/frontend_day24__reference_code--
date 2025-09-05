@@ -1,6 +1,6 @@
-# frontend_day24__reference_code--
+# frontend_day23__reference_code
 1. 공통
-    - [ ]  완성된 day23 폴더를 활용하여 day24를 완성해 주세요.
+    - [ ]  완성된 day22 폴더를 활용하여 day23를 완성해 주세요.
 2. 게시글등록
     - [ ]  src/app/boards/page.tsx 경로에 파일을 생성하고 게시글목록 페이지를 완성합니다.
         - [ ]  피그마 첫번째 화면과 같이 결과물이 나오도록 만들어 주세요.
