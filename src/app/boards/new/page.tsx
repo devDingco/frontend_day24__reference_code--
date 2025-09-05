@@ -4,15 +4,16 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import { useMutation, gql } from "@apollo/client";
 import { useRouter } from "next/navigation";
+import addImage from "@assets/add_image.png";
 
 const IMAGE_SRC = {
   addImage: {
-    src: require("@assets/add_image.png"),
+    src: addImage,
     alt: "사진추가이미지",
   },
 };
 
-const 나의그래프큐엘셋팅 = gql`
+const CREATE_BOARD = gql`
   mutation createBoard($createBoardInput: CreateBoardInput!) {
     createBoard(createBoardInput: $createBoardInput) {
       _id
@@ -47,7 +48,7 @@ export default function BoardsNewPage() {
 
   const isButtonDisabled = !name || !password || !title || !content;
 
-  const [createBoard] = useMutation(나의그래프큐엘셋팅);
+  const [createBoard] = useMutation(CREATE_BOARD);
 
   const router = useRouter();
 
